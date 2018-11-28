@@ -1,8 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1">
-	<!-- TODO Add Nodes -->
+<AnchorPane prefHeight="556.0" prefWidth="703.0" xmlns="http://javafx.com/javafx/8.0.151" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFX.FXMLControllerPrincipal">
+   <children>
+      <Button layoutX="160.0" layoutY="502.0" mnemonicParsing="false" onAction="#inserirAluno" prefHeight="43.0" prefWidth="67.0" text="Cadastrar" />
+      <Label layoutX="14.0" layoutY="14.0" text="Cadastro de Aluno">
+         <font>
+            <Font name="Arial Black" size="29.0" />
+         </font>
+      </Label>
+      <TextField fx:id="btnNome" layoutX="14.0" layoutY="116.0" />
+      <TextField fx:id="btnMediaA" layoutX="14.0" layoutY="166.0" />
+      <TextField fx:id="btnMediaB" layoutX="14.0" layoutY="222.0" />
+      <Label layoutX="73.0" layoutY="91.0" text="Nome:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="141.0" text="Media A:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="67.0" layoutY="201.0" text="Media B:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TableView fx:id="idTable" layoutX="242.0" layoutY="91.0" prefHeight="200.0" prefWidth="378.0">
+         <columns>
+            <TableColumn fx:id="colunaID" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="colunaNome" prefWidth="75.0" text="Nome" />
+            <TableColumn fx:id="colunaMediaA" prefWidth="75.0" text="Média A" />
+            <TableColumn fx:id="colunaMediaB" prefWidth="75.0" text="Média B" />
+            <TableColumn fx:id="colunaMediaFinal" prefWidth="75.0" text="Média Final" />
+         </columns>
+      </TableView>
+      <Button fx:id="btnEditar" layoutX="558.0" layoutY="301.0" mnemonicParsing="false" onAction="#editarAluno" text="Editar" />
+      <Button fx:id="btnExcluir" layoutX="498.0" layoutY="300.0" mnemonicParsing="false" onAction="#deletarAluno" text="Excluir" />
+      <Button fx:id="btnSair" layoutX="542.0" layoutY="485.0" mnemonicParsing="false" onAction="#sair" prefHeight="35.0" prefWidth="78.0" text="Sair" />
+      <Button fx:id="btnPesquisar" layoutX="420.0" layoutY="300.0" mnemonicParsing="false" onAction="#pesquisar" text="Pesquisar" />
+      <TextField fx:id="TXTPesquisar" layoutX="242.0" layoutY="301.0" prefHeight="25.0" prefWidth="164.0" />
+      <TextField fx:id="btnNomeRP" layoutX="14.0" layoutY="455.0" />
+      <TextField fx:id="btnIdadeRP" layoutX="223.0" layoutY="453.0" />
+      <Label layoutX="283.0" layoutY="432.0" text="Idade: ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="73.0" layoutY="423.0" text="Nome:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="370.0" text="Cadastro de Responsável">
+         <font>
+            <Font name="Arial Black" size="29.0" />
+         </font>
+      </Label>
+   </children>
 </AnchorPane>
-
